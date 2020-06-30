@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controll.SpellsController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="700.0">
+         <image>
+            <Image url="@../img/phoenix.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="viewSpells" layoutX="296.0" layoutY="442.0" mnemonicParsing="false" onAction="#butViewSpells" prefHeight="32.0" prefWidth="109.0" style="-fx-background-color: #f7efea;" text="Next">
+         <font>
+            <Font name="Lucida Sans Unicode" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="175.0" layoutY="24.0" prefHeight="32.0" prefWidth="350.0" style="-fx-background-color: ffffff;" text="Available spells for your class and level.">
+         <font>
+            <Font name="Lucida Sans Unicode" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableSpells" layoutX="20.0" layoutY="139.0" prefHeight="293.0" prefWidth="660.0">
+         <columns>
+            <TableColumn fx:id="tableSpalls_colClass" prefWidth="159.0" text="Class" />
+            <TableColumn fx:id="tableSpalls_colSpalls" prefWidth="441.0" text="Spells" />
+            <TableColumn fx:id="tableSpalls_colLevel" prefWidth="58.0" text="Level" />
+         </columns>
+      </TableView>
+      <Label layoutX="264.0" layoutY="65.0" prefHeight="32.0" prefWidth="172.0" style="-fx-background-color: ffffff;" text="You can view them.">
+         <font>
+            <Font name="Lucida Sans Unicode" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controll.ClassController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="700.0">
+         <image>
+            <Image url="@../img/phoenix.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="enterClass" layoutX="296.0" layoutY="442.0" mnemonicParsing="false" onAction="#butEnterClass" prefHeight="32.0" prefWidth="109.0" style="-fx-background-color: #f7efea;" text="Next">
+         <font>
+            <Font name="Lucida Sans Unicode" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="classCharacter" layoutX="212.0" layoutY="375.0" prefHeight="45.0" prefWidth="278.0" promptText="Enter the name of your future character...">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="174.0" layoutY="28.0" prefHeight="32.0" prefWidth="353.0" style="-fx-background-color: ffffff;" text="Fine! The next step is to choose a class.">
+         <font>
+            <Font name="Lucida Sans Unicode" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backToName" layoutX="602.0" layoutY="28.0" mnemonicParsing="false" onAction="#butBackToName" prefHeight="32.0" prefWidth="69.0" style="-fx-background-color: #f7efea;" text="Back">
+         <font>
+            <Font name="Lucida Sans Unicode" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableClass" layoutX="20.0" layoutY="81.0" prefHeight="277.0" prefWidth="660.0">
+        <columns>
+          <TableColumn fx:id="tableClass_colClass" prefWidth="107.0" text="Class" />
+          <TableColumn fx:id="tableClass_colHits" prefWidth="50.0" text="Hit Dice" />
+            <TableColumn fx:id="tableClass_colProfessional" minWidth="0.0" prefWidth="345.0" text="Professionalism" />
+            <TableColumn fx:id="tableClass_colSaves" prefWidth="157.0" text="Saves" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
